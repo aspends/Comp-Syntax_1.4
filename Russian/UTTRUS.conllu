@@ -1,0 +1,478 @@
+
+# text = ﻿Кто:<PROPN> они:<PRON> ?:<PUNCT>
+# analyses = 2
+# parsetree = (Chunks (Comp (NP (PN '﻿Кто'))) (Utt (Utt (NP (Pron они))) (Punct '?')))
+# weight = 2.5000000000000005e-8
+1	﻿Кто	_	PROPN	_	_	0	root	_	_
+2	они	_	PRON	_	_	1	dep	_	_
+3	?	_	PUNCT	_	_	2	punct	_	_
+
+
+
+# text = Маленький:<ADJ> город:<NOUN> с:<ADP> минаретами:<NOUN> пролетает:<VERB> мимо:<ADV> .:<PUNCT>
+# analyses = 4
+# parsetree = (Utt (Utt (S (NP (NP (CN (AP (A Маленький)) (CN (N город)))) (NP_obl (Prep с) (NP (CN (N минаретами))))) (VP (VP (V пролетает)) (Adv мимо)))) (Punct '.'))
+# weight = 1.562500000000001e-9
+1	Маленький	_	ADJ	_	_	2	amod	_	_
+2	город	_	NOUN	_	_	5	nsubj	_	_
+3	с	_	ADP	_	_	4	case	_	_
+4	минаретами	_	NOUN	_	_	2	nmod	_	_
+5	пролетает	_	VERB	_	_	0	root	_	_
+6	мимо	_	ADV	_	_	5	advmod	_	_
+7	.	_	PUNCT	_	_	5	punct	_	_
+
+
+
+# text = Я:<PRON> был:<AUX> мальчиком:<NOUN> с:<ADP> грязными:<ADJ> ботинками:<NOUN> .:<PUNCT>
+# analyses = 6
+# parsetree = (Utt (Utt (QS (IP Я) (cop был) (Comp (NP (NP (CN (N мальчиком))) (NP_obl (Prep с) (NP (CN (AP (A грязными)) (CN (N ботинками))))))))) (Punct '.'))
+# weight = 3.125000000000002e-9
+1	Я	_	PRON	_	_	3	nsubj	_	_
+2	был	_	AUX	_	_	3	cop	_	_
+3	мальчиком	_	NOUN	_	_	0	root	_	_
+4	с	_	ADP	_	_	6	case	_	_
+5	грязными	_	ADJ	_	_	6	amod	_	_
+6	ботинками	_	NOUN	_	_	3	nmod	_	_
+7	.	_	PUNCT	_	_	3	punct	_	_
+
+
+
+# text = Дорожная:<ADJ> полиция:<NOUN> Шэньчжэне:<PROPN> и:<CCONJ> раньше:<ADV> выбирала:<VERB> нетрадиционные:<ADJ> наказания:<NOUN> .:<PUNCT>
+# analyses = 3
+# parsetree = (Chunks (CN (AP (A Дорожная)) (CN (N полиция))) (Comp (NP (PN Шэньчжэне))) (Utt (Utt (Conj и) (Utt (Imp (neg раньше) (VP (V2 выбирала) (NP (CN (AP (A нетрадиционные)) (CN (N наказания)))))))) (Punct '.')))
+# weight = 3.1250000000000017e-15
+1	Дорожная	_	ADJ	_	_	2	amod	_	_
+2	полиция	_	NOUN	_	_	0	root	_	_
+3	Шэньчжэне	_	PROPN	_	_	2	dep	_	_
+4	и	_	CCONJ	_	_	6	cc	_	_
+5	раньше	_	ADV	_	_	6	advmod	_	_
+6	выбирала	_	VERB	_	_	2	dep	_	_
+7	нетрадиционные	_	ADJ	_	_	8	amod	_	_
+8	наказания	_	NOUN	_	_	6	obj	_	_
+9	.	_	PUNCT	_	_	6	punct	_	_
+
+
+
+# text = Наука:<NOUN> ,:<PUNCT> изучающая:<VERB> вулканы:<NOUN> ,:<PUNCT> называется:<VERB> “:<PUNCT> volcanology:<X> ”:<PUNCT> ,:<PUNCT> иногда:<ADV> она:<PRON> записана:<VERB> как:<SCONJ> “:<PUNCT> vulcanology:<X> ”:<PUNCT> .:<PUNCT>
+# analyses = 9
+# parsetree = (Chunks (Comp (NP (NP (CN (N Наука))) (comma ',') (VP_pass (V2 изучающая)))) (Utt (Utt (NP (NP (CN (N вулканы))) (comma ',') (VP_pass (V2 называется)))) (Punct '“')) (Str volcanology) (S_comma (comma '”') (S (Adv_comma (comma ',') (Adv иногда)) (S (NP (Pron она)) (VP (V записана))))) (Subj как) (Punct '“') (Str vulcanology) (Punct '”') (Punct '.'))
+# weight = 8.00000000000001e-26
+1	Наука	_	NOUN	_	_	0	root	_	_
+2	,	_	PUNCT	_	_	1	punct	_	_
+3	изучающая	_	VERB	_	_	1	acl	_	_
+4	вулканы	_	NOUN	_	_	1	dep	_	_
+5	,	_	PUNCT	_	_	4	punct	_	_
+6	называется	_	VERB	_	_	4	acl	_	_
+7	“	_	PUNCT	_	_	4	punct	_	_
+8	volcanology	_	X	_	_	1	dep	_	_
+9	”	_	PUNCT	_	_	13	punct	_	_
+10	,	_	PUNCT	_	_	11	punct	_	_
+11	иногда	_	ADV	_	_	13	advmod	_	_
+12	она	_	PRON	_	_	13	nsubj	_	_
+13	записана	_	VERB	_	_	1	dep	_	_
+14	как	_	SCONJ	_	_	1	dep	_	_
+15	“	_	PUNCT	_	_	1	dep	_	_
+16	vulcanology	_	X	_	_	1	dep	_	_
+17	”	_	PUNCT	_	_	1	dep	_	_
+18	.	_	PUNCT	_	_	1	dep	_	_
+
+
+
+# text = Это:<PRON> было:<AUX> произведено:<VERB> прямо:<ADV> на:<ADP> Мексиканском:<ADJ> побережье:<NOUN> с:<ADP> Апреля:<PROPN> по:<ADP> Июнь:<PROPN> .:<PUNCT>
+# analyses = 36
+# parsetree = (Utt (Utt (QS (IP Это) (cop было) (VP_pass (VP_pass (VP_pass (V2 произведено)) (Adv прямо)) (NP_obl (Prep на) (NP (NP (CN (AP (A Мексиканском)) (CN (N побережье)))) (NP_obl (Prep с) (NP (NP (PN Апреля)) (NP_obl (Prep по) (NP (PN Июнь)))))))))) (Punct '.'))
+# weight = 3.125000000000004e-14
+1	Это	_	PRON	_	_	3	nsubj:pass	_	_
+2	было	_	AUX	_	_	3	aux:pass	_	_
+3	произведено	_	VERB	_	_	0	root	_	_
+4	прямо	_	ADV	_	_	3	advmod	_	_
+5	на	_	ADP	_	_	7	case	_	_
+6	Мексиканском	_	ADJ	_	_	7	amod	_	_
+7	побережье	_	NOUN	_	_	3	nmod	_	_
+8	с	_	ADP	_	_	9	case	_	_
+9	Апреля	_	PROPN	_	_	7	nmod	_	_
+10	по	_	ADP	_	_	11	case	_	_
+11	Июнь	_	PROPN	_	_	9	nmod	_	_
+12	.	_	PUNCT	_	_	3	punct	_	_
+
+
+
+# text = “:<PUNCT> Её:<PART> голос:<NOUN> буквально:<ADV> пронёсся:<VERB> по:<ADP> всему:<DET> миру:<NOUN> ”:<PUNCT> -:<NOUN> сказал:<VERB> Лейв:<PROPN> .:<PUNCT>
+# analyses = 3
+# parsetree = (Chunks (Punct '“') ('s' Её) (S_front (S (NP (CN (N голос))) (VP (AdV буквально) (VP (V2 пронёсся) (NP_obl (Prep по) (NP (NP (Det всему)) (SC (S_that (S (NP (NP (CN (N миру))) (NP_appos (Punct_appos '”') (NP (CN (N '-'))))) (VP (V2 сказал) (NP (PN Лейв))))))))))) (comma '.')))
+# weight = 3.125000000000003e-22
+1	“	_	PUNCT	_	_	0	root	_	_
+2	Её	_	PART	_	_	1	dep	_	_
+3	голос	_	NOUN	_	_	5	nsubj	_	_
+4	буквально	_	ADV	_	_	5	advmod	_	_
+5	пронёсся	_	VERB	_	_	1	dep	_	_
+6	по	_	ADP	_	_	7	case	_	_
+7	всему	_	DET	_	_	5	obl	_	_
+8	миру	_	NOUN	_	_	11	nsubj	_	_
+9	”	_	PUNCT	_	_	10	punct	_	_
+10	-	_	NOUN	_	_	8	appos	_	_
+11	сказал	_	VERB	_	_	7	acl	_	_
+12	Лейв	_	PROPN	_	_	11	obj	_	_
+13	.	_	PUNCT	_	_	5	punct	_	_
+
+
+
+# text = Свидетель:<NOUN> сказал:<VERB> полиции:<NOUN> ,:<PUNCT> что:<SCONJ> жертва:<NOUN> напала:<VERB> на:<ADP> подозреваемого:<NOUN> в:<ADP> Апреле:<PROPN> .:<PUNCT>
+# analyses = 31
+# parsetree = (Utt (Utt (S (NP (CN (N Свидетель))) (VP (V2 сказал) (NP (NP (NP (CN (N полиции))) (comma ',') (S_sub (Subj что) (S (NP (CN (N жертва))) (VP (V2 напала) (NP_obl (Prep на) (NP (CN (N подозреваемого)))))))) (NP_obl (Prep в) (NP (PN Апреле))))))) (Punct '.'))
+# weight = 3.906250000000005e-15
+1	Свидетель	_	NOUN	_	_	2	nsubj	_	_
+2	сказал	_	VERB	_	_	0	root	_	_
+3	полиции	_	NOUN	_	_	2	obj	_	_
+4	,	_	PUNCT	_	_	3	punct	_	_
+5	что	_	SCONJ	_	_	7	mark	_	_
+6	жертва	_	NOUN	_	_	7	nsubj	_	_
+7	напала	_	VERB	_	_	3	acl	_	_
+8	на	_	ADP	_	_	9	case	_	_
+9	подозреваемого	_	NOUN	_	_	7	obl	_	_
+10	в	_	ADP	_	_	11	case	_	_
+11	Апреле	_	PROPN	_	_	3	nmod	_	_
+12	.	_	PUNCT	_	_	2	punct	_	_
+
+
+
+# text = Это:<PRON> невероятно:<ADV> очевидно:<ADJ> ,:<PUNCT> когда:<SCONJ> имя:<NOUN> знаменитости:<NOUN> изначально:<ADV> довольно:<ADV> редкое:<ADJ> .:<PUNCT>
+# analyses = 4
+# parsetree = (Chunks (Comp (Comp (NP (Pron Это))) (Adv невероятно)) (Utt (Utt (AP (A очевидно))) (Punct ',')) (Subj когда) (Utt (Utt (NP (CN (CN (N (N_one имя) (N знаменитости))) (AP (AdA изначально) (AP (AdA довольно) (AP (A редкое))))))) (Punct '.')))
+# weight = 1.2500000000000012e-18
+1	Это	_	PRON	_	_	0	root	_	_
+2	невероятно	_	ADV	_	_	1	advmod	_	_
+3	очевидно	_	ADJ	_	_	1	dep	_	_
+4	,	_	PUNCT	_	_	3	punct	_	_
+5	когда	_	SCONJ	_	_	1	dep	_	_
+6	имя	_	NOUN	_	_	7	compound	_	_
+7	знаменитости	_	NOUN	_	_	1	dep	_	_
+8	изначально	_	ADV	_	_	10	advmod	_	_
+9	довольно	_	ADV	_	_	10	advmod	_	_
+10	редкое	_	ADJ	_	_	7	amod	_	_
+11	.	_	PUNCT	_	_	7	punct	_	_
+
+
+
+# text = Это:<PRON> не:<PART> остановило:<VERB> инвесторов:<NOUN> ,:<PUNCT> желающих:<VERB> вложить:<VERB> свои:<DET> деньги:<NOUN> в:<ADP> фонды:<NOUN> .:<PUNCT>
+# analyses = 61
+# parsetree = (Utt (Utt (NP (NP (NP (Pron Это)) (SC (VP_to (to не) (VP (V2V остановило) (NP (NP (CN (N инвесторов))) (comma ',') (VP_pass (V2 желающих))) (VP (V2 вложить) (NP (Det свои) (CN (N деньги)))))))) (NP_obl (Prep в) (NP (CN (N фонды)))))) (Punct '.'))
+# weight = 3.1250000000000025e-16
+1	Это	_	PRON	_	_	0	root	_	_
+2	не	_	PART	_	_	3	mark	_	_
+3	остановило	_	VERB	_	_	1	acl	_	_
+4	инвесторов	_	NOUN	_	_	3	obj	_	_
+5	,	_	PUNCT	_	_	4	punct	_	_
+6	желающих	_	VERB	_	_	4	acl	_	_
+7	вложить	_	VERB	_	_	3	xcomp	_	_
+8	свои	_	DET	_	_	9	det	_	_
+9	деньги	_	NOUN	_	_	7	obj	_	_
+10	в	_	ADP	_	_	11	case	_	_
+11	фонды	_	NOUN	_	_	1	nmod	_	_
+12	.	_	PUNCT	_	_	1	punct	_	_
+
+
+
+# text = Это:<PRON> несоответствие:<NOUN> между:<ADP> экономическими:<ADJ> данными:<NOUN> и:<CCONJ> политической:<ADJ> риторикой:<NOUN> знакомо:<ADJ> или:<CCONJ> должно:<ADJ> быть:<AUX> знакомым:<NOUN> .:<PUNCT>
+# analyses = 9
+# parsetree = (Utt (Utt (S (NP (NP (NP_poss (Pron_poss Это)) (CN (N несоответствие))) (NP_obl (Prep между) (NP (ListNP (NP (CN (AP (A экономическими)) (CN (N данными))))) (NP_conj (Conj и) (NP (CN (AP (A политической)) (CN (CN (N риторикой)) (AP (ListAP (AP (A знакомо))) (AP_conj (Conj или) (AP (A должно))))))))))) (cop быть) (Comp (NP (CN (N знакомым)))))) (Punct '.'))
+# weight = 1.2207031250000012e-20
+1	Это	_	PRON	_	_	2	nmod:poss	_	_
+2	несоответствие	_	NOUN	_	_	13	nsubj	_	_
+3	между	_	ADP	_	_	5	case	_	_
+4	экономическими	_	ADJ	_	_	5	amod	_	_
+5	данными	_	NOUN	_	_	2	nmod	_	_
+6	и	_	CCONJ	_	_	8	cc	_	_
+7	политической	_	ADJ	_	_	8	amod	_	_
+8	риторикой	_	NOUN	_	_	5	conj	_	_
+9	знакомо	_	ADJ	_	_	8	amod	_	_
+10	или	_	CCONJ	_	_	11	cc	_	_
+11	должно	_	ADJ	_	_	9	conj	_	_
+12	быть	_	AUX	_	_	13	cop	_	_
+13	знакомым	_	NOUN	_	_	0	root	_	_
+14	.	_	PUNCT	_	_	13	punct	_	_
+
+
+
+# text = По:<ADP> оценкам:<NOUN> технико:<ADJ> -:<ADJ> экономического:<ADJ> обоснования:<NOUN> ,:<PUNCT> пассажирам:<NOUN> потребуется:<VERB> около:<ADP> четырёх:<NUM> минут:<NOUN> ,:<PUNCT> чтобы:<SCONJ> пересечь:<VERB> реку:<NOUN> Потомка:<PROPN> на:<ADP> гондоле:<NOUN> .:<PUNCT>
+# analyses = 1057
+# parsetree = (Utt (Utt (S (S (NP_oblcomma (NP_obl (Prep По) (NP (CN (N оценкам))))) (S (NP (NP (CN (AP (A технико)) (CN (AP (A '-')) (CN (AP (A экономического)) (CN (N обоснования)))))) (NP_appos (Punct_appos ',') (NP (CN (N пассажирам))))) (VP (V2 потребуется) (NP_obl (Prep около) (NP (Num (Card четырёх)) (NP (CN (N минут)))))))) (S_sub (comma ',') (Subj чтобы) (VP (V2 пересечь) (NP (NP (N реку) (PN Потомка)) (NP_obl (Prep на) (NP (CN (N гондоле))))))))) (Punct '.'))
+# weight = 2.4414062500000046e-27
+1	По	_	ADP	_	_	2	case	_	_
+2	оценкам	_	NOUN	_	_	9	nmod	_	_
+3	технико	_	ADJ	_	_	6	amod	_	_
+4	-	_	ADJ	_	_	6	amod	_	_
+5	экономического	_	ADJ	_	_	6	amod	_	_
+6	обоснования	_	NOUN	_	_	9	nsubj	_	_
+7	,	_	PUNCT	_	_	8	punct	_	_
+8	пассажирам	_	NOUN	_	_	6	appos	_	_
+9	потребуется	_	VERB	_	_	0	root	_	_
+10	около	_	ADP	_	_	12	case	_	_
+11	четырёх	_	NUM	_	_	12	nummod	_	_
+12	минут	_	NOUN	_	_	9	obl	_	_
+13	,	_	PUNCT	_	_	15	punct	_	_
+14	чтобы	_	SCONJ	_	_	15	mark	_	_
+15	пересечь	_	VERB	_	_	9	advcl	_	_
+16	реку	_	NOUN	_	_	15	obj	_	_
+17	Потомка	_	PROPN	_	_	16	flat	_	_
+18	на	_	ADP	_	_	19	case	_	_
+19	гондоле	_	NOUN	_	_	16	nmod	_	_
+20	.	_	PUNCT	_	_	9	punct	_	_
+
+
+
+# text = Он:<PRON> собирал:<VERB> карты:<NOUN> и:<CCONJ> обменивался:<VERB> ими:<PRON> с:<ADP> парнями:<NOUN> .:<PUNCT>
+# analyses = 7
+# parsetree = (Utt (Utt (QS (IP Он) (VP (ListVP (VP (V2 собирал) (NP (CN (N карты))))) (VP_conj (Conj и) (VP (V2 обменивался) (NP (NP (Pron ими)) (NP_obl (Prep с) (NP (CN (N парнями)))))))))) (Punct '.'))
+# weight = 1.562500000000001e-11
+1	Он	_	PRON	_	_	2	nsubj	_	_
+2	собирал	_	VERB	_	_	0	root	_	_
+3	карты	_	NOUN	_	_	2	obj	_	_
+4	и	_	CCONJ	_	_	5	cc	_	_
+5	обменивался	_	VERB	_	_	2	conj	_	_
+6	ими	_	PRON	_	_	5	obj	_	_
+7	с	_	ADP	_	_	8	case	_	_
+8	парнями	_	NOUN	_	_	6	nmod	_	_
+9	.	_	PUNCT	_	_	2	punct	_	_
+
+
+
+# text = Это:<DET> преступление:<NOUN> предусматривает:<VERB> пять:<NUM> лет:<NOUN> лишения:<NOUN> свободы:<NOUN> .:<PUNCT>
+# analyses = 43
+# parsetree = (Utt (Utt (S (NP (Det Это) (CN (N преступление))) (VP (V2 предусматривает) (NP (Num (Card пять)) (NP (CN (N (N_one лет) (N (N_one лишения) (N свободы))))))))) (Punct '.'))
+# weight = 6.250000000000004e-10
+1	Это	_	DET	_	_	2	det	_	_
+2	преступление	_	NOUN	_	_	3	nsubj	_	_
+3	предусматривает	_	VERB	_	_	0	root	_	_
+4	пять	_	NUM	_	_	7	nummod	_	_
+5	лет	_	NOUN	_	_	7	compound	_	_
+6	лишения	_	NOUN	_	_	7	compound	_	_
+7	свободы	_	NOUN	_	_	3	obj	_	_
+8	.	_	PUNCT	_	_	3	punct	_	_
+
+
+
+# text = Новость:<NOUN> была:<AUX> распространена:<VERB> в:<ADP> каждой:<DET> деревне:<NOUN> в:<ADP> провинции:<NOUN> .:<PUNCT>
+# analyses = 15
+# parsetree = (Utt (Utt (S (NP (CN (N Новость))) (have была) (VP (V2 распространена) (NP_obl (Prep в) (NP (NP (Det каждой) (CN (N деревне))) (NP_obl (Prep в) (NP (CN (N провинции))))))))) (Punct '.'))
+# weight = 6.250000000000006e-11
+1	Новость	_	NOUN	_	_	3	nsubj	_	_
+2	была	_	AUX	_	_	3	aux	_	_
+3	распространена	_	VERB	_	_	0	root	_	_
+4	в	_	ADP	_	_	6	case	_	_
+5	каждой	_	DET	_	_	6	det	_	_
+6	деревне	_	NOUN	_	_	3	obl	_	_
+7	в	_	ADP	_	_	8	case	_	_
+8	провинции	_	NOUN	_	_	6	nmod	_	_
+9	.	_	PUNCT	_	_	3	punct	_	_
+
+
+
+# text = Эти:<DET> мысли:<NOUN> всегда:<ADV> со:<ADP> мной:<PRON> в:<ADP> подсознании:<NOUN> .:<PUNCT>
+# analyses = 2
+# parsetree = (Chunks (Comp (Comp (Comp (NP (Det Эти) (CN (N мысли)))) (Adv всегда)) (NP_obl (Prep со) (NP (NP (Pron мной)) (NP_obl (Prep в) (NP (CN (N подсознании))))))) (Punct '.'))
+# weight = 1.2500000000000007e-13
+1	Эти	_	DET	_	_	2	det	_	_
+2	мысли	_	NOUN	_	_	0	root	_	_
+3	всегда	_	ADV	_	_	2	advmod	_	_
+4	со	_	ADP	_	_	5	case	_	_
+5	мной	_	PRON	_	_	2	nmod	_	_
+6	в	_	ADP	_	_	7	case	_	_
+7	подсознании	_	NOUN	_	_	5	nmod	_	_
+8	.	_	PUNCT	_	_	2	dep	_	_
+
+
+
+# text = Адам:<PROPN> был:<AUX> бы:<AUX> перенесён:<VERB> в:<ADP> жизнь:<NOUN> вечную:<ADJ> .:<PUNCT>
+# analyses = 12
+# parsetree = (Utt (Utt (S (NP (PN Адам)) (aux был) (have бы) (VP (V2 перенесён) (NP_obl (Prep в) (NP (CN (CN (N жизнь)) (AP (A вечную)))))))) (Punct '.'))
+# weight = 5.000000000000003e-11
+1	Адам	_	PROPN	_	_	4	nsubj	_	_
+2	был	_	AUX	_	_	4	aux	_	_
+3	бы	_	AUX	_	_	4	aux	_	_
+4	перенесён	_	VERB	_	_	0	root	_	_
+5	в	_	ADP	_	_	6	case	_	_
+6	жизнь	_	NOUN	_	_	4	obl	_	_
+7	вечную	_	ADJ	_	_	6	amod	_	_
+8	.	_	PUNCT	_	_	4	punct	_	_
+
+
+
+# text = Оболочки:<NOUN> сгнили:<VERB> и:<CCONJ> должны:<ADJ> были:<AUX> быть:<AUX> заменены:<VERB> .:<PUNCT>
+# analyses = 4
+# parsetree = (Chunks (Comp (NP (NP (CN (N Оболочки))) (VP_pass (V2 сгнили)))) (AP_conj (Conj и) (AP (A должны))) (Imp (do были) (VP (aux быть))) (Utt (Utt (Imp (VP (V заменены)))) (Punct '.')))
+# weight = 1.2500000000000007e-18
+1	Оболочки	_	NOUN	_	_	0	root	_	_
+2	сгнили	_	VERB	_	_	1	acl	_	_
+3	и	_	CCONJ	_	_	4	cc	_	_
+4	должны	_	ADJ	_	_	1	dep	_	_
+5	были	_	AUX	_	_	6	aux	_	_
+6	быть	_	AUX	_	_	1	dep	_	_
+7	заменены	_	VERB	_	_	1	dep	_	_
+8	.	_	PUNCT	_	_	7	punct	_	_
+
+
+
+# text = Она:<PRON> была:<AUX> возмущена:<VERB> тем:<PRON> ,:<PUNCT> что:<SCONJ> эта:<DET> девчонка:<NOUN> посмела:<VERB> выставить:<VERB> её:<PRON> дурой:<NOUN> перед:<ADP> всем:<DET> классом:<NOUN> .:<PUNCT>
+# analyses = 2739
+# parsetree = (Utt (Utt (S (NP (Pron Она)) (have была) (VP (V2 возмущена) (NP (NP (NP (Pron тем)) (comma ',') (S_sub (Subj что) (S (NP (NP (Det эта)) (SC (S_that (S (NP (CN (N девчонка))) (VP (V посмела)))))) (VP (V2 выставить) (NP (NP_poss (Pron_poss её)) (CN (N дурой))))))) (NP_obl (Prep перед) (NP (Det всем) (CN (N классом)))))))) (Punct '.'))
+# weight = 3.906250000000006e-20
+1	Она	_	PRON	_	_	3	nsubj	_	_
+2	была	_	AUX	_	_	3	aux	_	_
+3	возмущена	_	VERB	_	_	0	root	_	_
+4	тем	_	PRON	_	_	3	obj	_	_
+5	,	_	PUNCT	_	_	4	punct	_	_
+6	что	_	SCONJ	_	_	10	mark	_	_
+7	эта	_	DET	_	_	10	nsubj	_	_
+8	девчонка	_	NOUN	_	_	9	nsubj	_	_
+9	посмела	_	VERB	_	_	7	acl	_	_
+10	выставить	_	VERB	_	_	4	acl	_	_
+11	её	_	PRON	_	_	12	nmod:poss	_	_
+12	дурой	_	NOUN	_	_	10	obj	_	_
+13	перед	_	ADP	_	_	15	case	_	_
+14	всем	_	DET	_	_	15	det	_	_
+15	классом	_	NOUN	_	_	4	nmod	_	_
+16	.	_	PUNCT	_	_	3	punct	_	_
+
+
+
+# text = Убедительный:<ADJ> оползень:<NOUN> ,:<PUNCT> который:<PRON> он:<PRON> имел:<VERB> в:<ADP> коллегии:<NOUN> выборщиков:<NOUN> ,:<PUNCT> затмил:<VERB> незначительность:<NOUN> победы:<NOUN> ,:<PUNCT> основанной:<VERB> всего:<PART> на:<ADP> 43:<NUM> %:<SYM> голосов:<NOUN> избирателей:<NOUN> .:<PUNCT>
+# analyses = 5
+# parsetree = (Chunks (Comp (NP (NP (NP (NP (CN (AP (A Убедительный)) (CN (N оползень)))) (NP_appos (Punct_appos ',') (NP (Pron который)))) (SC (S_that (S (NP (Pron он)) (VP (V имел)))))) (NP_obl (Prep в) (NP (NP (CN (N (N_one коллегии) (N выборщиков)))) (comma ',') (VP_pass (V2 затмил)))))) (NP_poss (NP (NP (CN (N (N_one незначительность) (N победы)))) (comma ',') (VP_pass (V2 основанной))) ('s' всего)) (Comp (NP_obl (Prep на) (NP (Num (Card '43'))))) (Symb '%') (Utt (Utt (NP (CN (N (N_one голосов) (N избирателей))))) (Punct '.')))
+# weight = 9.76562500000002e-37
+1	Убедительный	_	ADJ	_	_	2	amod	_	_
+2	оползень	_	NOUN	_	_	0	root	_	_
+3	,	_	PUNCT	_	_	4	punct	_	_
+4	который	_	PRON	_	_	2	appos	_	_
+5	он	_	PRON	_	_	6	nsubj	_	_
+6	имел	_	VERB	_	_	2	acl	_	_
+7	в	_	ADP	_	_	9	case	_	_
+8	коллегии	_	NOUN	_	_	9	compound	_	_
+9	выборщиков	_	NOUN	_	_	2	nmod	_	_
+10	,	_	PUNCT	_	_	9	punct	_	_
+11	затмил	_	VERB	_	_	9	acl	_	_
+12	незначительность	_	NOUN	_	_	13	compound	_	_
+13	победы	_	NOUN	_	_	2	dep	_	_
+14	,	_	PUNCT	_	_	13	punct	_	_
+15	основанной	_	VERB	_	_	13	acl	_	_
+16	всего	_	PART	_	_	13	case	_	_
+17	на	_	ADP	_	_	18	case	_	_
+18	43	_	NUM	_	_	2	dep	_	_
+19	%	_	SYM	_	_	2	dep	_	_
+20	голосов	_	NOUN	_	_	21	compound	_	_
+21	избирателей	_	NOUN	_	_	2	dep	_	_
+22	.	_	PUNCT	_	_	21	punct	_	_
+
+
+
+# text = Войска:<NOUN> Соединенных:<VERB> Штатов:<PROPN> теперь:<ADV> имеют:<VERB> атропин:<NOUN> и:<CCONJ> автоинъекторы:<NOUN> в:<ADP> своих:<DET> аптечках:<NOUN> для:<ADP> использования:<NOUN> в:<ADP> случае:<NOUN> отравления:<NOUN> фосфорорганическими:<ADJ> нервно:<ADJ> -:<ADJ> паралитическими:<ADJ> веществами:<NOUN> .:<PUNCT>
+# analyses = 841
+# parsetree = (Utt (Utt (S (NP (CN (N Войска))) (VP (VS Соединенных) (S_that (S (NP (PN Штатов)) (VP (AdV теперь) (VP (V3 имеют) (NP (NP (ListNP (NP (CN (N атропин)))) (NP_conj (Conj и) (NP (CN (N автоинъекторы))))) (NP_obl (Prep в) (NP (NP (Det своих) (CN (N аптечках))) (NP_obl (Prep для) (NP (NP (CN (N использования))) (NP_obl (Prep в) (NP (CN (N (N_one случае) (N отравления)))))))))) (NP (CN (AP (A фосфорорганическими)) (CN (AP (A нервно)) (CN (AP (A '-')) (CN (AP (A паралитическими)) (CN (N веществами)))))))))))))) (Punct '.'))
+# weight = 1.9073486328125028e-28
+1	Войска	_	NOUN	_	_	2	nsubj	_	_
+2	Соединенных	_	VERB	_	_	0	root	_	_
+3	Штатов	_	PROPN	_	_	5	nsubj	_	_
+4	теперь	_	ADV	_	_	5	advmod	_	_
+5	имеют	_	VERB	_	_	2	ccomp	_	_
+6	атропин	_	NOUN	_	_	5	iobj	_	_
+7	и	_	CCONJ	_	_	8	cc	_	_
+8	автоинъекторы	_	NOUN	_	_	6	conj	_	_
+9	в	_	ADP	_	_	11	case	_	_
+10	своих	_	DET	_	_	11	det	_	_
+11	аптечках	_	NOUN	_	_	6	nmod	_	_
+12	для	_	ADP	_	_	13	case	_	_
+13	использования	_	NOUN	_	_	11	nmod	_	_
+14	в	_	ADP	_	_	16	case	_	_
+15	случае	_	NOUN	_	_	16	compound	_	_
+16	отравления	_	NOUN	_	_	13	nmod	_	_
+17	фосфорорганическими	_	ADJ	_	_	21	amod	_	_
+18	нервно	_	ADJ	_	_	21	amod	_	_
+19	-	_	ADJ	_	_	21	amod	_	_
+20	паралитическими	_	ADJ	_	_	21	amod	_	_
+21	веществами	_	NOUN	_	_	5	obj	_	_
+22	.	_	PUNCT	_	_	2	punct	_	_
+
+
+
+# text = он:<PRON> может:<VERB> добиться:<VERB> хитростью:<NOUN> в:<ADP> долгосрочной:<ADJ> перспективе:<NOUN> того:<PRON> ,:<PUNCT> чего:<PRON> он:<PRON> не:<PART> может:<VERB> сделать:<VERB> с:<ADP> помощью:<NOUN> силы:<NOUN> и:<CCONJ> насилия:<NOUN> в:<ADP> краткосрочной:<ADJ> перспективе:<NOUN> .:<PUNCT>
+# analyses = 961
+# parsetree = (Utt (Utt (S (NP (NP (Pron он)) (VP_pass (V2 может))) (VP (V3 добиться) (NP (NP (CN (N хитростью))) (NP_obl (Prep в) (NP (CN (AP (A долгосрочной)) (CN (N перспективе)))))) (NP (NP (NP (NP (Pron того)) (NP_appos (Punct_appos ',') (NP (Pron чего)))) (SC (S_that (S (NP (NP (Pron он)) (SC (VP_to (to не) (VP (V может))))) (VP (V сделать)))))) (NP_obl (Prep с) (NP (NP (ListNP (NP (CN (N (N_one помощью) (N силы))))) (NP_conj (Conj и) (NP (CN (N насилия))))) (NP_obl (Prep в) (NP (CN (AP (A краткосрочной)) (CN (N перспективе))))))))))) (Punct '.'))
+# weight = 9.536743164062517e-34
+1	он	_	PRON	_	_	3	nsubj	_	_
+2	может	_	VERB	_	_	1	acl	_	_
+3	добиться	_	VERB	_	_	0	root	_	_
+4	хитростью	_	NOUN	_	_	3	iobj	_	_
+5	в	_	ADP	_	_	7	case	_	_
+6	долгосрочной	_	ADJ	_	_	7	amod	_	_
+7	перспективе	_	NOUN	_	_	4	nmod	_	_
+8	того	_	PRON	_	_	3	obj	_	_
+9	,	_	PUNCT	_	_	10	punct	_	_
+10	чего	_	PRON	_	_	8	appos	_	_
+11	он	_	PRON	_	_	14	nsubj	_	_
+12	не	_	PART	_	_	13	mark	_	_
+13	может	_	VERB	_	_	11	acl	_	_
+14	сделать	_	VERB	_	_	8	acl	_	_
+15	с	_	ADP	_	_	17	case	_	_
+16	помощью	_	NOUN	_	_	17	compound	_	_
+17	силы	_	NOUN	_	_	8	nmod	_	_
+18	и	_	CCONJ	_	_	19	cc	_	_
+19	насилия	_	NOUN	_	_	17	conj	_	_
+20	в	_	ADP	_	_	22	case	_	_
+21	краткосрочной	_	ADJ	_	_	22	amod	_	_
+22	перспективе	_	NOUN	_	_	17	nmod	_	_
+23	.	_	PUNCT	_	_	3	punct	_	_
+
+
+
+# text = было:<AUX> сказано:<VERB> ,:<PUNCT> что:<SCONJ> только:<PART> иерархическое:<ADJ> общество:<NOUN> с:<ADP> праздным:<ADJ> классом:<NOUN> наверху:<ADV> может:<VERB> создавать:<VERB> произведения:<NOUN> искусства:<NOUN> .:<PUNCT>
+# analyses = 4
+# parsetree = (Chunks (Utt (Utt (Imp (do было) (VP (V сказано)))) (Punct ',')) (Subj что) ('s' только) (S_front (S (SC (S_that (S (NP (NP (CN (AP (A иерархическое)) (CN (N общество)))) (NP_obl (Prep с) (NP (CN (AP (A праздным)) (CN (N классом)))))) (VP (AdV наверху) (VP (V может)))))) (VP (V2 создавать) (NP (CN (N (N_one произведения) (N искусства)))))) (comma '.')))
+# weight = 1.9531250000000028e-23
+1	было	_	AUX	_	_	2	aux	_	_
+2	сказано	_	VERB	_	_	0	root	_	_
+3	,	_	PUNCT	_	_	2	punct	_	_
+4	что	_	SCONJ	_	_	2	dep	_	_
+5	только	_	PART	_	_	2	dep	_	_
+6	иерархическое	_	ADJ	_	_	7	amod	_	_
+7	общество	_	NOUN	_	_	12	nsubj	_	_
+8	с	_	ADP	_	_	10	case	_	_
+9	праздным	_	ADJ	_	_	10	amod	_	_
+10	классом	_	NOUN	_	_	7	nmod	_	_
+11	наверху	_	ADV	_	_	12	advmod	_	_
+12	может	_	VERB	_	_	13	csubj	_	_
+13	создавать	_	VERB	_	_	2	dep	_	_
+14	произведения	_	NOUN	_	_	15	compound	_	_
+15	искусства	_	NOUN	_	_	13	obj	_	_
+16	.	_	PUNCT	_	_	13	punct	_	_
+
+
+
+# text = его:<DET> остроумное:<ADJ> объяснение:<NOUN> ,:<PUNCT> что:<SCONJ> он:<PRON> не:<PART> сжег:<VERB> бы:<AUX> церковь:<NOUN> ,:<PUNCT> если:<SCONJ> бы:<AUX> не:<PART> думал:<VERB> ,:<PUNCT> что:<SCONJ> в:<ADP> ней:<PRON> находится:<VERB> епископ:<NOUN> .:<PUNCT>
+# analyses = 4
+# parsetree = (Chunks (Utt (Utt (NP (NP (NP (Det его) (CN (AP (A остроумное)) (CN (N объяснение)))) (comma ',') (S_sub (Subj что) (S (NP (NP (Pron он)) (SC (VP_to (to не) (VP (V сжег))))) (cop бы) (Comp (NP (NP (CN (N церковь))) (comma ',') (S_sub (Subj если) (VP (aux бы)))))))) (SC (VP_to (to не) (VP (V думал)))))) (Punct ',')) (Subj что) (Comp (NP_obl (Prep в) (NP (NP (Pron ней)) (VP_pass (V2 находится))))) (Utt (Utt (NP (CN (N епископ)))) (Punct '.')))
+# weight = 3.9062500000000066e-35
+1	его	_	DET	_	_	3	det	_	_
+2	остроумное	_	ADJ	_	_	3	amod	_	_
+3	объяснение	_	NOUN	_	_	0	root	_	_
+4	,	_	PUNCT	_	_	3	punct	_	_
+5	что	_	SCONJ	_	_	10	mark	_	_
+6	он	_	PRON	_	_	10	nsubj	_	_
+7	не	_	PART	_	_	8	mark	_	_
+8	сжег	_	VERB	_	_	6	acl	_	_
+9	бы	_	AUX	_	_	10	cop	_	_
+10	церковь	_	NOUN	_	_	3	acl	_	_
+11	,	_	PUNCT	_	_	10	punct	_	_
+12	если	_	SCONJ	_	_	13	mark	_	_
+13	бы	_	AUX	_	_	10	acl	_	_
+14	не	_	PART	_	_	15	mark	_	_
+15	думал	_	VERB	_	_	3	acl	_	_
+16	,	_	PUNCT	_	_	3	punct	_	_
+17	что	_	SCONJ	_	_	3	dep	_	_
+18	в	_	ADP	_	_	19	case	_	_
+19	ней	_	PRON	_	_	3	dep	_	_
+20	находится	_	VERB	_	_	19	acl	_	_
+21	епископ	_	NOUN	_	_	3	dep	_	_
+22	.	_	PUNCT	_	_	21	punct	_	_
+
+
+

@@ -1,0 +1,62 @@
+-- utterances and sentences
+Utt ::= Utt Punct        # head punct
+Utt ::= Conj Utt         # cc head
+Utt ::= NP_obl comma Utt # cc punct head
+Utt ::= parenth Utt parenth # punct head punct
+
+Utt ::= S
+Utt ::= QS
+Utt ::= Imp
+Utt ::= NP
+Utt ::= AP
+Utt ::= IP
+Utt ::= IAdv
+Utt ::= Num
+
+
+-- sentences
+Utt ::= S Punct # head punct
+Utt ::= Conj Utt # cc head
+Utt ::= NP Obl comma Utt # cc punct head
+Utt ::= Parenth Utt Parenth # punct head punct
+
+S ::= NP VP # nsubj head
+S ::= NP Aux neg? VP # nsubj aux advmod head
+S ::= NP Aux neg? Part? VP # nsubj aux advmod advmod head
+S ::= NP Aux neg? Part? Adv? VP # nsubj aux advmod advmod advmod head
+S ::= NP Cop Adv? neg? Comp # nsubj cop advmod advmod head
+S ::= NP Aux Adv? neg? Cop Comp # nsubj aux advmod advmod cop head
+S ::= NP Aux Adv? neg? Part? Cop Comp # nsubj aux advmod advmod advmod cop head
+S ::= NP Aux Adv? neg? Part? Adv? Cop Comp # nsubj aux advmod advmod advmod advmod cop head
+S ::= NP Cop Adv? neg? VP_Pass # nsubj:pass cop advmod advmod head
+S ::= NP Aux Adv? neg? Cop VP_Pass # nsubj:pass aux advmod advmod cop:pass head
+S ::= NP Aux Adv? neg? Part? Cop VP_Pass # nsubj:pass aux advmod advmod advmod cop:pass head
+S ::= NP Aux Adv? neg? Part? Adv? Cop VP_Pass # nsubj:pass aux advmod advmod advmod advmod cop:pass head
+
+NP ::= ProperNoun | CommonNoun
+NP ::= Det? Adjective* Noun Gen? | Pronoun | Numeral
+NP ::= NP Obl
+
+VP ::= Verb NP Obl?
+VP ::= VP Adv?
+VP ::= VP Adposition NP
+
+Obl ::= Adposition NP
+Obl ::= Adposition Pronoun
+
+Adv ::= Adverb
+Adv ::= Pronoun Adverb
+
+Part ::= Participle
+
+Cop ::= "olla"
+
+Aux ::= "olla" | "ei" | "voi" | "saattaa" | ...
+
+Comp ::= Adjective | Adverb | Noun Part?
+
+Conj ::= CoordinatingConjunction | SubordinatingConjunction
+
+Punct ::= "." | "!" | "?" | ","
+
+Parenth ::= "(" | ")"
