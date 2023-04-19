@@ -1,0 +1,445 @@
+
+# text = Kuka:<PRON> ne:<PRON> on:<AUX> ?:<PUNCT>
+# analyses = 4
+# parsetree = (Utt (Utt (NP (NP (Pron Kuka)) (RS (RP ne) (VP (aux on))))) (Punct '?'))
+# weight = 5.000000000000001e-8
+1	Kuka	_	PRON	_	_	0	root	_	_
+2	ne	_	PRON	_	_	3	nsubj	_	_
+3	on	_	AUX	_	_	1	acl:relcl	_	_
+4	?	_	PUNCT	_	_	1	punct	_	_
+
+
+
+# text = Pieni:<ADJ> kaupunki:<NOUN> ,:<PUNCT> jossa:<PRON> on:<AUX> kaksi:<NUM> minareettia:<NOUN> ,:<PUNCT> liukuu:<VERB> ohitse:<ADV> .:<PUNCT>
+# analyses = 55
+# parsetree = (Utt (Utt (NP (NP (CN (AP (A Pieni)) (CN (N kaupunki)))) (comma ',') (RS (RP jossa) (cop on) (Comp (NP (Num (Card kaksi)) (NP (NP (CN (N minareettia))) (comma ',') (VP_pass (VP_pass (V2 liukuu)) (Adv ohitse)))))))) (Punct '.'))
+# weight = 6.250000000000005e-15
+1	Pieni	_	ADJ	_	_	2	amod	_	_
+2	kaupunki	_	NOUN	_	_	0	root	_	_
+3	,	_	PUNCT	_	_	2	punct	_	_
+4	jossa	_	PRON	_	_	7	nsubj	_	_
+5	on	_	AUX	_	_	7	cop	_	_
+6	kaksi	_	NUM	_	_	7	nummod	_	_
+7	minareettia	_	NOUN	_	_	2	acl:relcl	_	_
+8	,	_	PUNCT	_	_	7	punct	_	_
+9	liukuu	_	VERB	_	_	7	acl	_	_
+10	ohitse	_	ADV	_	_	9	advmod	_	_
+11	.	_	PUNCT	_	_	2	punct	_	_
+
+
+
+# text = Olin:<AUX> vain:<ADV> poika:<NOUN> ,:<PUNCT> jolla:<PRON> oli:<AUX> mutaiset:<ADJ> kengät:<NOUN> .:<PUNCT>
+# analyses = 9
+# parsetree = (Utt (Utt (QS (cop Olin) (neg vain) (NP (NP (CN (N poika))) (comma ',') (RS (RP jolla) (cop oli) (Comp (AP (A mutaiset))))) (Comp (NP (CN (N kengät)))))) (Punct '.'))
+# weight = 1.2500000000000009e-10
+1	Olin	_	AUX	_	_	8	cop	_	_
+2	vain	_	ADV	_	_	8	nsubj	_	_
+3	poika	_	NOUN	_	_	8	advmod	_	_
+4	,	_	PUNCT	_	_	3	punct	_	_
+5	jolla	_	PRON	_	_	7	nsubj	_	_
+6	oli	_	AUX	_	_	7	cop	_	_
+7	mutaiset	_	ADJ	_	_	3	acl:relcl	_	_
+8	kengät	_	NOUN	_	_	0	root	_	_
+9	.	_	PUNCT	_	_	8	punct	_	_
+
+
+
+# text = Shenzhenin:<PROPN> liikennepoliisi:<NOUN> on:<AUX> valinnut:<VERB> epätavallisia:<ADJ> rangaistuksia:<NOUN> aiemmin:<ADV> .:<PUNCT>
+# analyses = 8
+# parsetree = (Utt (Utt (S (NP (CN (N (PN Shenzhenin) (CN (N liikennepoliisi))))) (have on) (VP (VP (V2 valinnut) (NP (CN (AP (A epätavallisia)) (CN (N rangaistuksia))))) (Adv aiemmin)))) (Punct '.'))
+# weight = 3.125000000000002e-10
+1	Shenzhenin	_	PROPN	_	_	2	compound	_	_
+2	liikennepoliisi	_	NOUN	_	_	4	nsubj	_	_
+3	on	_	AUX	_	_	4	aux	_	_
+4	valinnut	_	VERB	_	_	0	root	_	_
+5	epätavallisia	_	ADJ	_	_	6	amod	_	_
+6	rangaistuksia	_	NOUN	_	_	4	obj	_	_
+7	aiemmin	_	ADV	_	_	4	advmod	_	_
+8	.	_	PUNCT	_	_	4	punct	_	_
+
+
+
+# text = Tulivuorien:<NOUN> tutkimus:<NOUN> on:<AUX> nimeltään:<NOUN> vulkanologia:<NOUN> ,:<PUNCT> joskus:<ADV> kirjoitetaan:<VERB> myös:<ADV> muodossa:<NOUN> volkanologia:<NOUN> .:<PUNCT>
+# analyses = 19
+# parsetree = (Utt (Utt (S (SC (S_that (S (NP (CN (N (N_one Tulivuorien) (N tutkimus)))) (cop on) (Comp (Comp (NP (CN (N (N_one nimeltään) (N vulkanologia))))) (comma ',') (Adv joskus))))) (VP (V2 kirjoitetaan) (NP (Predet myös) (NP (CN (N (N_one muodossa) (N volkanologia)))))))) (Punct '.'))
+# weight = 7.812500000000008e-15
+1	Tulivuorien	_	NOUN	_	_	2	compound	_	_
+2	tutkimus	_	NOUN	_	_	5	nsubj	_	_
+3	on	_	AUX	_	_	5	cop	_	_
+4	nimeltään	_	NOUN	_	_	5	compound	_	_
+5	vulkanologia	_	NOUN	_	_	8	csubj	_	_
+6	,	_	PUNCT	_	_	5	punct	_	_
+7	joskus	_	ADV	_	_	5	advmod	_	_
+8	kirjoitetaan	_	VERB	_	_	0	root	_	_
+9	myös	_	ADV	_	_	11	det:predet	_	_
+10	muodossa	_	NOUN	_	_	11	compound	_	_
+11	volkanologia	_	NOUN	_	_	8	obj	_	_
+12	.	_	PUNCT	_	_	8	punct	_	_
+
+
+
+# text = Se:<PRON> toteutettiin:<VERB> aivan:<ADV> Meksikon:<PROPN> rannikon:<NOUN> lähellä:<ADP> huhtikuusta:<NOUN> kesäkuuhun:<NOUN> .:<PUNCT>
+# analyses = 27
+# parsetree = (Utt (Utt (S (there Se) (be_V toteutettiin) (AdV aivan) (NP (NP (CN (N (PN Meksikon) (CN (N rannikon))))) (NP_obl (Prep lähellä) (NP (CN (N (N_one huhtikuusta) (N kesäkuuhun)))))))) (Punct '.'))
+# weight = 1.2500000000000009e-10
+1	Se	_	PRON	_	_	2	expl	_	_
+2	toteutettiin	_	VERB	_	_	0	root	_	_
+3	aivan	_	ADV	_	_	2	advmod	_	_
+4	Meksikon	_	PROPN	_	_	5	compound	_	_
+5	rannikon	_	NOUN	_	_	2	nsubj	_	_
+6	lähellä	_	ADP	_	_	8	case	_	_
+7	huhtikuusta	_	NOUN	_	_	8	compound	_	_
+8	kesäkuuhun	_	NOUN	_	_	5	nmod	_	_
+9	.	_	PUNCT	_	_	2	punct	_	_
+
+
+
+# text = ":<PUNCT> Hänen:<PRON> äänensä:<NOUN> kiersi:<VERB> kirjaimellisesti:<ADV> maailman:<NOUN> ympäri:<ADP> ":<PUNCT> ,:<PUNCT> sanoi:<VERB> Leive:<PROPN> .:<PUNCT>
+# analyses = 2
+# parsetree = (Chunks (Utt (Utt (parenth '"') (Utt (QS (IP Hänen) (NP (CN (N äänensä))) (VPSlash (VP (V2 kiersi) (NP (Predet kirjaimellisesti) (NP (CN (N maailman))))) (Prep ympäri)))) (parenth '"')) (Punct ',')) (Utt (Utt (Imp (VP (V2 sanoi) (NP (PN Leive))))) (Punct '.')))
+# weight = 1.250000000000001e-20
+1	"	_	PUNCT	_	_	4	punct	_	_
+2	Hänen	_	PRON	_	_	4	obj	_	_
+3	äänensä	_	NOUN	_	_	4	nsubj	_	_
+4	kiersi	_	VERB	_	_	0	root	_	_
+5	kirjaimellisesti	_	ADV	_	_	6	det:predet	_	_
+6	maailman	_	NOUN	_	_	4	obj	_	_
+7	ympäri	_	ADP	_	_	4	case	_	_
+8	"	_	PUNCT	_	_	4	punct	_	_
+9	,	_	PUNCT	_	_	4	punct	_	_
+10	sanoi	_	VERB	_	_	4	dep	_	_
+11	Leive	_	PROPN	_	_	10	obj	_	_
+12	.	_	PUNCT	_	_	10	punct	_	_
+
+
+
+# text = Silmäkertomuksen:<NOUN> mukaan:<ADP> todistaja:<NOUN> kertoi:<VERB> poliisille:<NOUN> ,:<PUNCT> että:<SCONJ> uhri:<NOUN> oli:<AUX> hyökännyt:<VERB> epäiltyä:<NOUN> vastaan:<ADV> huhtikuussa:<NOUN> .:<PUNCT>
+# analyses = 77
+# parsetree = (Utt (Utt (S (NP (NP (CN (N Silmäkertomuksen))) (NP_obl (Prep mukaan) (NP (CN (N todistaja))))) (VP (V2 kertoi) (NP (NP (CN (N poliisille))) (comma ',') (S_sub (Subj että) (S (NP (CN (N uhri))) (have oli) (VP (V3 hyökännyt) (NP (CN (N epäiltyä))) (NP (Predet vastaan) (NP (CN (N huhtikuussa))))))))))) (Punct '.'))
+# weight = 1.9531250000000025e-17
+1	Silmäkertomuksen	_	NOUN	_	_	4	nsubj	_	_
+2	mukaan	_	ADP	_	_	3	case	_	_
+3	todistaja	_	NOUN	_	_	1	nmod	_	_
+4	kertoi	_	VERB	_	_	0	root	_	_
+5	poliisille	_	NOUN	_	_	4	obj	_	_
+6	,	_	PUNCT	_	_	5	punct	_	_
+7	että	_	SCONJ	_	_	10	mark	_	_
+8	uhri	_	NOUN	_	_	10	nsubj	_	_
+9	oli	_	AUX	_	_	10	aux	_	_
+10	hyökännyt	_	VERB	_	_	5	acl	_	_
+11	epäiltyä	_	NOUN	_	_	10	iobj	_	_
+12	vastaan	_	ADV	_	_	13	det:predet	_	_
+13	huhtikuussa	_	NOUN	_	_	10	obj	_	_
+14	.	_	PUNCT	_	_	4	punct	_	_
+
+
+
+# text = Se:<PRON> on:<AUX> kaikkein:<ADV> ilmeisintä:<ADJ> ,:<PUNCT> kun:<SCONJ> julkkiksen:<NOUN> nimi:<NOUN> on:<AUX> alun:<ADV> perin:<ADV> melko:<ADV> harvinainen:<ADJ> .:<PUNCT>
+# analyses = 25
+# parsetree = (Utt (Utt (S (S (it Se) (cop on) (AdV kaikkein) (AP (A ilmeisintä))) (S_sub (comma ',') (Subj kun) (S (NP (CN (N (N_one julkkiksen) (N nimi)))) (cop on) (AdV alun) (neg perin) (Comp (AP (AdA melko) (AP (A harvinainen)))))))) (Punct '.'))
+# weight = 2.0000000000000025e-14
+1	Se	_	PRON	_	_	4	expl	_	_
+2	on	_	AUX	_	_	4	cop	_	_
+3	kaikkein	_	ADV	_	_	4	advmod	_	_
+4	ilmeisintä	_	ADJ	_	_	0	root	_	_
+5	,	_	PUNCT	_	_	13	punct	_	_
+6	kun	_	SCONJ	_	_	13	mark	_	_
+7	julkkiksen	_	NOUN	_	_	8	compound	_	_
+8	nimi	_	NOUN	_	_	13	nsubj	_	_
+9	on	_	AUX	_	_	13	cop	_	_
+10	alun	_	ADV	_	_	13	advmod	_	_
+11	perin	_	ADV	_	_	13	advmod	_	_
+12	melko	_	ADV	_	_	13	advmod	_	_
+13	harvinainen	_	ADJ	_	_	4	advcl	_	_
+14	.	_	PUNCT	_	_	4	punct	_	_
+
+
+
+# text = Tämä:<PRON> ei:<AUX> ole:<AUX> estänyt:<VERB> sijoittajia:<NOUN> ryntäämästä:<NOUN> panostamaan:<VERB> rahojaan:<NOUN> rahastoihin:<NOUN> .:<PUNCT>
+# analyses = 218
+# parsetree = (Utt (Utt (QS (IP Tämä) (aux ei) (have ole) (VP (V2V estänyt) (NP (CN (N (N_one sijoittajia) (N ryntäämästä)))) (VP (V2 panostamaan) (NP (CN (N (N_one rahojaan) (N rahastoihin)))))))) (Punct '.'))
+# weight = 5.0000000000000034e-11
+1	Tämä	_	PRON	_	_	4	nsubj	_	_
+2	ei	_	AUX	_	_	4	aux	_	_
+3	ole	_	AUX	_	_	4	aux	_	_
+4	estänyt	_	VERB	_	_	0	root	_	_
+5	sijoittajia	_	NOUN	_	_	6	compound	_	_
+6	ryntäämästä	_	NOUN	_	_	4	obj	_	_
+7	panostamaan	_	VERB	_	_	4	xcomp	_	_
+8	rahojaan	_	NOUN	_	_	9	compound	_	_
+9	rahastoihin	_	NOUN	_	_	7	obj	_	_
+10	.	_	PUNCT	_	_	4	punct	_	_
+
+
+
+# text = Tämä:<PRON> epäjohdonmukaisuus:<NOUN> taloustietojen:<NOUN> ja:<CCONJ> poliittisen:<ADJ> retoriikan:<NOUN> välillä:<ADP> on:<AUX> tuttua:<ADJ> ,:<PUNCT> tai:<CCONJ> sen:<PRON> pitäisi:<AUX> olla:<AUX> .:<PUNCT>
+# analyses = 4
+# parsetree = (Chunks (Comp (NP (ListNP (NP (NP_poss (Pron_poss Tämä)) (CN (N (N_one epäjohdonmukaisuus) (N taloustietojen))))) (NP_conj (Conj ja) (NP (CN (AP (A poliittisen)) (CN (N retoriikan))))))) (Prep välillä) (Utt (Utt (Imp (cop on) (Comp (AP (A tuttua))))) (Punct ',')) (Utt (Utt (Conj tai) (Utt (S (NP (Pron sen)) (have pitäisi) (VP (aux olla))))) (Punct '.')))
+# weight = 7.812500000000008e-25
+1	Tämä	_	PRON	_	_	3	nmod:poss	_	_
+2	epäjohdonmukaisuus	_	NOUN	_	_	3	compound	_	_
+3	taloustietojen	_	NOUN	_	_	0	root	_	_
+4	ja	_	CCONJ	_	_	6	cc	_	_
+5	poliittisen	_	ADJ	_	_	6	amod	_	_
+6	retoriikan	_	NOUN	_	_	3	conj	_	_
+7	välillä	_	ADP	_	_	3	dep	_	_
+8	on	_	AUX	_	_	9	cop	_	_
+9	tuttua	_	ADJ	_	_	3	dep	_	_
+10	,	_	PUNCT	_	_	9	punct	_	_
+11	tai	_	CCONJ	_	_	14	cc	_	_
+12	sen	_	PRON	_	_	14	nsubj	_	_
+13	pitäisi	_	AUX	_	_	14	aux	_	_
+14	olla	_	AUX	_	_	3	dep	_	_
+15	.	_	PUNCT	_	_	14	punct	_	_
+
+
+
+# text = Mahdollisuustutkimuksen:<PROPN> mukaan:<ADP> matkustajien:<NOUN> kestäisi:<VERB> noin:<ADV> neljä:<NUM> minuuttia:<NOUN> ylittää:<VERB> Potomac-joen:<NOUN> gondolalla:<NOUN> .:<PUNCT>
+# analyses = 199
+# parsetree = (Utt (Utt (S (NP (NP (PN Mahdollisuustutkimuksen)) (NP_obl (Prep mukaan) (NP (CN (N matkustajien))))) (VP (V2V kestäisi) (NP (Predet noin) (NP (Num (Card neljä)) (NP (CN (N minuuttia))))) (VP (V2 ylittää) (NP (CN (N (N_one 'Potomac-joen') (N gondolalla)))))))) (Punct '.'))
+# weight = 7.812500000000007e-14
+1	Mahdollisuustutkimuksen	_	PROPN	_	_	4	nsubj	_	_
+2	mukaan	_	ADP	_	_	3	case	_	_
+3	matkustajien	_	NOUN	_	_	1	nmod	_	_
+4	kestäisi	_	VERB	_	_	0	root	_	_
+5	noin	_	ADV	_	_	7	det:predet	_	_
+6	neljä	_	NUM	_	_	7	nummod	_	_
+7	minuuttia	_	NOUN	_	_	4	obj	_	_
+8	ylittää	_	VERB	_	_	4	xcomp	_	_
+9	Potomac-joen	_	NOUN	_	_	10	compound	_	_
+10	gondolalla	_	NOUN	_	_	8	obj	_	_
+11	.	_	PUNCT	_	_	4	punct	_	_
+
+
+
+# text = Hän:<PRON> keräsi:<VERB> kortteja:<NOUN> ja:<CCONJ> vaihtoi:<VERB> niitä:<PRON> muiden:<PRON> poikien:<NOUN> kanssa:<ADP> .:<PUNCT>
+# analyses = 2
+# parsetree = (Chunks (RS (NP (Pron Hän)) (VPSlash (VP (ListVP (VP (V2 keräsi) (NP (CN (N kortteja))))) (VP_conj (Conj ja) (VP (V3 vaihtoi) (NP (Pron niitä)) (NP (NP_poss (Pron_poss muiden)) (CN (N poikien)))))) (Prep kanssa))) (Punct '.'))
+# weight = 1.2500000000000014e-18
+1	Hän	_	PRON	_	_	2	nsubj	_	_
+2	keräsi	_	VERB	_	_	0	root	_	_
+3	kortteja	_	NOUN	_	_	2	obj	_	_
+4	ja	_	CCONJ	_	_	5	cc	_	_
+5	vaihtoi	_	VERB	_	_	2	conj	_	_
+6	niitä	_	PRON	_	_	5	iobj	_	_
+7	muiden	_	PRON	_	_	8	nmod:poss	_	_
+8	poikien	_	NOUN	_	_	5	obj	_	_
+9	kanssa	_	ADP	_	_	2	case	_	_
+10	.	_	PUNCT	_	_	2	dep	_	_
+
+
+
+# text = Tämä:<PRON> rikos:<NOUN> johtaa:<VERB> viiden:<NUM> vuoden:<NOUN> vankeusrangaistukseen:<NOUN> .:<PUNCT>
+# analyses = 21
+# parsetree = (Utt (Utt (S (NP (NP_poss (Pron_poss Tämä)) (CN (N rikos))) (VP (V2 johtaa) (NP (Num (Card viiden)) (NP (CN (N (N_one vuoden) (N vankeusrangaistukseen)))))))) (Punct '.'))
+# weight = 3.125000000000002e-9
+1	Tämä	_	PRON	_	_	2	nmod:poss	_	_
+2	rikos	_	NOUN	_	_	3	nsubj	_	_
+3	johtaa	_	VERB	_	_	0	root	_	_
+4	viiden	_	NUM	_	_	6	nummod	_	_
+5	vuoden	_	NOUN	_	_	6	compound	_	_
+6	vankeusrangaistukseen	_	NOUN	_	_	3	obj	_	_
+7	.	_	PUNCT	_	_	3	punct	_	_
+
+
+
+# text = Uutinen:<PROPN> välitettiin:<VERB> jokaiseen:<PRON> kylään:<ADJ> maakunnassa:<NOUN> .:<PUNCT>
+# analyses = 4
+# parsetree = (Utt (Utt (S (NP (PN Uutinen)) (VP (V2 välitettiin) (NP (NP_poss (Pron_poss jokaiseen)) (CN (AP (A kylään)) (CN (N maakunnassa))))))) (Punct '.'))
+# weight = 6.250000000000002e-8
+1	Uutinen	_	PROPN	_	_	2	nsubj	_	_
+2	välitettiin	_	VERB	_	_	0	root	_	_
+3	jokaiseen	_	PRON	_	_	5	nmod:poss	_	_
+4	kylään	_	ADJ	_	_	5	amod	_	_
+5	maakunnassa	_	NOUN	_	_	2	obj	_	_
+6	.	_	PUNCT	_	_	2	punct	_	_
+
+
+
+# text = Kannan:<NOUN> näitä:<PRON> ajatuksia:<NOUN> takaraivossa:<VERB> .:<PUNCT>
+# analyses = 5
+# parsetree = (Utt (Utt (NP (NP (CN (N Kannan))) (RS (RP näitä) (NP (CN (N ajatuksia))) (VPSlash (V2 takaraivossa))))) (Punct '.'))
+# weight = 6.250000000000003e-7
+1	Kannan	_	NOUN	_	_	0	root	_	_
+2	näitä	_	PRON	_	_	4	obj	_	_
+3	ajatuksia	_	NOUN	_	_	4	nsubj	_	_
+4	takaraivossa	_	VERB	_	_	1	acl:relcl	_	_
+5	.	_	PUNCT	_	_	1	punct	_	_
+
+
+
+# text = Adam:<PROPN> olisi:<AUX> kantanut:<VERB> elämän:<NOUN> iankaikkisuuteen:<VERB> .:<PUNCT>
+# analyses = 15
+# parsetree = (Utt (Utt (S (NP (PN Adam)) (have olisi) (VP (V2V kantanut) (NP (CN (N elämän))) (VP (V iankaikkisuuteen))))) (Punct '.'))
+# weight = 2.500000000000001e-7
+1	Adam	_	PROPN	_	_	3	nsubj	_	_
+2	olisi	_	AUX	_	_	3	aux	_	_
+3	kantanut	_	VERB	_	_	0	root	_	_
+4	elämän	_	NOUN	_	_	3	obj	_	_
+5	iankaikkisuuteen	_	VERB	_	_	3	xcomp	_	_
+6	.	_	PUNCT	_	_	3	punct	_	_
+
+
+
+# text = Kuoret:<NOUN> olivat:<AUX> mätäneet:<VERB> pois:<ADV> ja:<CCONJ> ne:<PRON> oli:<AUX> korvattava:<VERB> .:<PUNCT>
+# analyses = 29
+# parsetree = (Utt (Utt (S (ListS (S (NP (CN (N Kuoret))) (have olivat) (VP (VP (V mätäneet)) (Adv pois)))) (S_conj (Conj ja) (S (there ne) (have oli) (be_V korvattava))))) (Punct '.'))
+# weight = 2.500000000000002e-10
+1	Kuoret	_	NOUN	_	_	3	nsubj	_	_
+2	olivat	_	AUX	_	_	3	aux	_	_
+3	mätäneet	_	VERB	_	_	0	root	_	_
+4	pois	_	ADV	_	_	3	advmod	_	_
+5	ja	_	CCONJ	_	_	8	cc	_	_
+6	ne	_	PRON	_	_	8	expl	_	_
+7	oli	_	AUX	_	_	8	aux	_	_
+8	korvattava	_	VERB	_	_	3	conj	_	_
+9	.	_	PUNCT	_	_	3	punct	_	_
+
+
+
+# text = Hän:<PRON> oli:<AUX> raivoissaan:<ADV> siitä:<PRON> ,:<PUNCT> että:<SCONJ> tämä:<PRON> tyttö:<NOUN> rohkenee:<VERB> nolata:<VERB> hänet:<PRON> luokan:<NOUN> edessä:<ADP> .:<PUNCT>
+# analyses = 25
+# parsetree = (Utt (Utt (QS (IP Hän) (do oli) (NP (Predet raivoissaan) (NP (NP (Pron siitä)) (comma ',') (S_sub (Subj että) (S (NP (NP_poss (Pron_poss tämä)) (CN (N tyttö))) (VP (V rohkenee)))))) (VPSlash (VP (V2 nolata) (NP (NP_poss (Pron_poss hänet)) (CN (N luokan)))) (Prep edessä)))) (Punct '.'))
+# weight = 2.500000000000003e-18
+1	Hän	_	PRON	_	_	10	obj	_	_
+2	oli	_	AUX	_	_	10	aux	_	_
+3	raivoissaan	_	ADV	_	_	4	det:predet	_	_
+4	siitä	_	PRON	_	_	10	nsubj	_	_
+5	,	_	PUNCT	_	_	4	punct	_	_
+6	että	_	SCONJ	_	_	9	mark	_	_
+7	tämä	_	PRON	_	_	8	nmod:poss	_	_
+8	tyttö	_	NOUN	_	_	9	nsubj	_	_
+9	rohkenee	_	VERB	_	_	4	acl	_	_
+10	nolata	_	VERB	_	_	0	root	_	_
+11	hänet	_	PRON	_	_	12	nmod:poss	_	_
+12	luokan	_	NOUN	_	_	10	obj	_	_
+13	edessä	_	ADP	_	_	10	case	_	_
+14	.	_	PUNCT	_	_	10	punct	_	_
+
+
+
+# text = Äänivyöry:<NOUN> ,:<PUNCT> jonka:<PRON> hän:<PRON> sai:<VERB> valitsijamiehistössä:<ADV> ,:<PUNCT> peitti:<VERB> alleen:<ADV> sen:<PRON> ,:<PUNCT> että:<SCONJ> voitto:<NOUN> perustui:<VERB> vain:<ADV> 43:<NUM> prosenttiin:<NOUN> kansanäänestyksessä:<NOUN> annetuista:<VERB> äänistä:<NOUN> .:<PUNCT>
+# analyses = 1701
+# parsetree = (Utt (Utt (NP (NP (NP (NP (NP (CN (N Äänivyöry))) (NP_appos (Punct_appos ',') (NP (Pron jonka)))) (SC (S_that (S (NP (Pron hän)) (VP (VP (V sai)) (Adv valitsijamiehistössä)))))) (comma ',') (VP_pass (V2 peitti))) (SC (S_that (S (NP (Predet alleen) (NP (NP (Pron sen)) (comma ',') (S_sub (Subj että) (S (NP (CN (N voitto))) (VP (V2 perustui) (NP (Predet vain) (NP (Num (Card '43')) (NP (CN (N (N_one prosenttiin) (N kansanäänestyksessä))))))))))) (VP (V2 annetuista) (NP (CN (N äänistä))))))))) (Punct '.'))
+# weight = 6.1035156250000086e-30
+1	Äänivyöry	_	NOUN	_	_	0	root	_	_
+2	,	_	PUNCT	_	_	3	punct	_	_
+3	jonka	_	PRON	_	_	1	appos	_	_
+4	hän	_	PRON	_	_	5	nsubj	_	_
+5	sai	_	VERB	_	_	1	acl	_	_
+6	valitsijamiehistössä	_	ADV	_	_	5	advmod	_	_
+7	,	_	PUNCT	_	_	1	punct	_	_
+8	peitti	_	VERB	_	_	1	acl	_	_
+9	alleen	_	ADV	_	_	10	det:predet	_	_
+10	sen	_	PRON	_	_	19	nsubj	_	_
+11	,	_	PUNCT	_	_	10	punct	_	_
+12	että	_	SCONJ	_	_	14	mark	_	_
+13	voitto	_	NOUN	_	_	14	nsubj	_	_
+14	perustui	_	VERB	_	_	10	acl	_	_
+15	vain	_	ADV	_	_	18	det:predet	_	_
+16	43	_	NUM	_	_	18	nummod	_	_
+17	prosenttiin	_	NOUN	_	_	18	compound	_	_
+18	kansanäänestyksessä	_	NOUN	_	_	14	obj	_	_
+19	annetuista	_	VERB	_	_	1	acl	_	_
+20	äänistä	_	NOUN	_	_	19	obj	_	_
+21	.	_	PUNCT	_	_	1	punct	_	_
+
+
+
+# text = Yhdysvaltain:<PROPN> joukot:<NOUN> kantavat:<VERB> nyt:<ADV> atropiinia:<NOUN> ja:<CCONJ> autoinjektoreita:<NOUN> ensiapupakkauksissaan:<NOUN> käytettäväksi:<VERB> tapauksissa:<NOUN> ,:<PUNCT> joissa:<PRON> esiintyy:<VERB> organofosfaattihermomyrkkyä:<NOUN> .:<PUNCT>
+# analyses = 2269
+# parsetree = (Utt (Utt (S (NP (CN (N (PN Yhdysvaltain) (CN (N joukot))))) (VP (V2 kantavat) (NP (Predet nyt) (NP (NP (ListNP (NP (CN (N atropiinia)))) (NP_conj (Conj ja) (NP (CN (N autoinjektoreita))))) (SC (S_that (S (NP (CN (N ensiapupakkauksissaan))) (VP (V2 käytettäväksi) (NP (NP (CN (N tapauksissa))) (comma ',') (RS (RP joissa) (VP (V2 esiintyy) (NP (CN (N organofosfaattihermomyrkkyä))))))))))))))) (Punct '.'))
+# weight = 3.051757812500003e-20
+1	Yhdysvaltain	_	PROPN	_	_	2	compound	_	_
+2	joukot	_	NOUN	_	_	3	nsubj	_	_
+3	kantavat	_	VERB	_	_	0	root	_	_
+4	nyt	_	ADV	_	_	5	det:predet	_	_
+5	atropiinia	_	NOUN	_	_	3	obj	_	_
+6	ja	_	CCONJ	_	_	7	cc	_	_
+7	autoinjektoreita	_	NOUN	_	_	5	conj	_	_
+8	ensiapupakkauksissaan	_	NOUN	_	_	9	nsubj	_	_
+9	käytettäväksi	_	VERB	_	_	5	acl	_	_
+10	tapauksissa	_	NOUN	_	_	9	obj	_	_
+11	,	_	PUNCT	_	_	10	punct	_	_
+12	joissa	_	PRON	_	_	13	nsubj	_	_
+13	esiintyy	_	VERB	_	_	10	acl:relcl	_	_
+14	organofosfaattihermomyrkkyä	_	NOUN	_	_	13	obj	_	_
+15	.	_	PUNCT	_	_	3	punct	_	_
+
+
+
+# text = Hän:<PRON> saattaa:<AUX> saavuttaa:<VERB> tavoitteensa:<NOUN> keinoin:<NOUN> ,:<PUNCT> jos:<SCONJ> ei:<AUX> väkivallalla:<VERB> lyhyellä:<ADJ> aikavälillä:<NOUN> ,:<PUNCT> niin:<ADV> pitkällä:<ADJ> aikavälillä:<ADJ> keinoilla:<NOUN> .:<PUNCT>
+# analyses = 1277
+# parsetree = (Utt (Utt (S (NP (Pron Hän)) (have saattaa) (VP (V2 saavuttaa) (NP (NP (CN (N tavoitteensa))) (SC (S_that (S (NP (NP (CN (N keinoin))) (comma ',') (S_sub (Subj jos) (VP (aux ei)))) (VP (V2 väkivallalla) (NP (NP (CN (AP (A lyhyellä)) (CN (N aikavälillä)))) (NP_appos (Punct_appos ',') (NP (CN (AP (AdA niin) (AP (A pitkällä))) (CN (AP (A aikavälillä)) (CN (N keinoilla))))))))))))))) (Punct '.'))
+# weight = 9.765625000000014e-27
+1	Hän	_	PRON	_	_	3	nsubj	_	_
+2	saattaa	_	AUX	_	_	3	aux	_	_
+3	saavuttaa	_	VERB	_	_	0	root	_	_
+4	tavoitteensa	_	NOUN	_	_	3	obj	_	_
+5	keinoin	_	NOUN	_	_	9	nsubj	_	_
+6	,	_	PUNCT	_	_	5	punct	_	_
+7	jos	_	SCONJ	_	_	8	mark	_	_
+8	ei	_	AUX	_	_	5	acl	_	_
+9	väkivallalla	_	VERB	_	_	4	acl	_	_
+10	lyhyellä	_	ADJ	_	_	11	amod	_	_
+11	aikavälillä	_	NOUN	_	_	9	obj	_	_
+12	,	_	PUNCT	_	_	16	punct	_	_
+13	niin	_	ADV	_	_	14	advmod	_	_
+14	pitkällä	_	ADJ	_	_	16	amod	_	_
+15	aikavälillä	_	ADJ	_	_	16	amod	_	_
+16	keinoilla	_	NOUN	_	_	11	appos	_	_
+17	.	_	PUNCT	_	_	3	punct	_	_
+
+
+
+# text = On:<AUX> sanottu:<VERB> ,:<PUNCT> että:<SCONJ> vain:<ADV> hierarkkinen:<ADJ> yhteiskunta:<NOUN> ,:<PUNCT> jossa:<PRON> vapaa-aikaan:<NOUN> on:<AUX> varaa:<NOUN> ,:<PUNCT> voi:<AUX> tuottaa:<VERB> taideteoksia:<NOUN> .:<PUNCT>
+# analyses = 3
+# parsetree = (Chunks (Utt (Utt (Imp (do On) (VP (V sanottu)))) (Punct ',')) (S_subcomma (Subj että) (S (NP (Predet vain) (NP (NP (CN (AP (A hierarkkinen)) (CN (N yhteiskunta)))) (NP_appos (Punct_appos ',') (NP (NP_poss (Pron_poss jossa)) (CN (N 'vapaa-aikaan')))))) (cop on) (Comp (NP (CN (N varaa))))) (comma ',')) (Utt (Utt (Imp (do voi) (VP (V2 tuottaa) (NP (CN (N taideteoksia)))))) (Punct '.')))
+# weight = 7.812500000000009e-26
+1	On	_	AUX	_	_	2	aux	_	_
+2	sanottu	_	VERB	_	_	0	root	_	_
+3	,	_	PUNCT	_	_	2	punct	_	_
+4	että	_	SCONJ	_	_	12	mark	_	_
+5	vain	_	ADV	_	_	7	det:predet	_	_
+6	hierarkkinen	_	ADJ	_	_	7	amod	_	_
+7	yhteiskunta	_	NOUN	_	_	12	nsubj	_	_
+8	,	_	PUNCT	_	_	10	punct	_	_
+9	jossa	_	PRON	_	_	10	nmod:poss	_	_
+10	vapaa-aikaan	_	NOUN	_	_	7	appos	_	_
+11	on	_	AUX	_	_	12	cop	_	_
+12	varaa	_	NOUN	_	_	2	dep	_	_
+13	,	_	PUNCT	_	_	12	punct	_	_
+14	voi	_	AUX	_	_	15	aux	_	_
+15	tuottaa	_	VERB	_	_	2	dep	_	_
+16	taideteoksia	_	NOUN	_	_	15	obj	_	_
+17	.	_	PUNCT	_	_	15	punct	_	_
+
+
+
+# text = Hänen:<PRON> suorasanainen:<ADJ> selityksensä:<NOUN> oli:<AUX> ,:<PUNCT> että:<SCONJ> hän:<PRON> ei:<AUX> olisi:<AUX> polttanut:<VERB> kirkkoa:<NOUN> ,:<PUNCT> jos:<SCONJ> hän:<PRON> olisi:<AUX> tiennyt:<VERB> piispan:<NOUN> olevan:<AUX> siellä:<ADV> .:<PUNCT>
+# analyses = 34047
+# parsetree = (Utt (Utt (S (NP (NP (Pron Hänen)) (SC (S_that (S (SC (S_that (S (S (NP (CN (AP (A suorasanainen)) (CN (N selityksensä)))) (VP (aux oli))) (S_sub (comma ',') (Subj että) (S (NP (Pron hän)) (VP (aux ei))))))) (VP (aux olisi)))))) (VP (V2 polttanut) (NP (NP (NP (CN (N kirkkoa))) (comma ',') (S_sub (Subj jos) (S (NP (Pron hän)) (have olisi) (VP (V tiennyt))))) (SC (S_that (S (NP (CN (N piispan))) (VP (VP (aux olevan)) (Adv siellä))))))))) (Punct '.'))
+# weight = 6.103515625000009e-37
+1	Hänen	_	PRON	_	_	10	nsubj	_	_
+2	suorasanainen	_	ADJ	_	_	3	amod	_	_
+3	selityksensä	_	NOUN	_	_	4	nsubj	_	_
+4	oli	_	AUX	_	_	9	csubj	_	_
+5	,	_	PUNCT	_	_	8	punct	_	_
+6	että	_	SCONJ	_	_	8	mark	_	_
+7	hän	_	PRON	_	_	8	nsubj	_	_
+8	ei	_	AUX	_	_	4	advcl	_	_
+9	olisi	_	AUX	_	_	1	acl	_	_
+10	polttanut	_	VERB	_	_	0	root	_	_
+11	kirkkoa	_	NOUN	_	_	10	obj	_	_
+12	,	_	PUNCT	_	_	11	punct	_	_
+13	jos	_	SCONJ	_	_	16	mark	_	_
+14	hän	_	PRON	_	_	16	nsubj	_	_
+15	olisi	_	AUX	_	_	16	aux	_	_
+16	tiennyt	_	VERB	_	_	11	acl	_	_
+17	piispan	_	NOUN	_	_	18	nsubj	_	_
+18	olevan	_	AUX	_	_	11	acl	_	_
+19	siellä	_	ADV	_	_	18	advmod	_	_
+20	.	_	PUNCT	_	_	10	punct	_	_
+
+
+

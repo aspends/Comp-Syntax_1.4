@@ -1,0 +1,56 @@
+Utt ::= Utt Punct # head punct
+Utt ::= Conj Utt # cc head
+Utt ::= NP_obl comma Utt # cc punct head
+Utt ::= parenth Utt parenth # punct head punct
+
+Utt ::= S
+Utt ::= Imp
+Utt ::= Q
+Utt ::= NP
+Utt ::= VP
+Utt ::= AP
+Utt ::= AdvP
+Utt ::= Num
+
+S ::= NP Aux? VP # nsubj head aux
+S ::= NP Neg? Aux VP # nsubj aux neg head
+S ::= NP Cop AdV? Comp # nsubj cop advmod head
+S ::= NP Neg? Cop Comp # nsubj cop neg head
+S ::= NP Aux Cop AdV? Comp # nsubj cop advmod aux head
+S ::= NP Neg? Aux Cop Comp # nsubj cop neg aux head
+S ::= NP Aux VP_pass # nsubj:pass aux:pass head
+S ::= NP Neg? Aux VP_pass # nsubj:pass aux:pass neg head
+S ::= There_be Adv? NP # expl head advmod nsubj
+S ::= It_cop AdV? AP # expl cop advmod head
+S ::= It_be AdV? NP # expl head advmod nsubj
+
+
+VP ::= V
+VP ::= V AdvP
+VP ::= V PP
+VP ::= VP AdvP
+VP ::= VP NP
+VP ::= VP AdV
+
+
+AdvP ::= Adverb
+AdvP ::= Adverb PP
+AdvP ::= AdvP_conj AdvP
+
+PP ::= P NP
+
+
+NP ::= Pronoun
+NP ::= ProperNoun
+NP ::= Possessive NP
+NP ::= NP_conj NP
+NP ::= Quantifier NP
+NP ::= Article N
+NP ::= Article Adjective N
+NP ::= Numeral N
+NP ::= NP PP
+
+
+AP ::= Adjective
+AP ::= Adjective PP
+AP ::= AP_conj AP
